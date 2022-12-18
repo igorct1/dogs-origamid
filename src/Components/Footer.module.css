@@ -1,0 +1,12 @@
+.footer {
+  background: var(--yellow);
+  padding: 4rem 1.6rem 0rem 1.6rem;
+  height: 16rem;
+  text-align: center;
+  color: #764701;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin-top: 1.6rem;
+}

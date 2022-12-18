@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap");
+
+:root {
+  --white: white;
+  --black: #333;
+  --yellow: #fb1;
+  --yellow-text: #764701;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--black);
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: "Spectral", georgia;
+  font-family: var(--type-first);
+  font-size: 1.6rem;
+  padding-top: 6.4rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1.6rem;
+  font-family: var(--type-first);
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.container {
+  max-width: 80rem;
+  padding: 0rem 1.6rem;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  margin-top: 6rem;
+}
+
+.title {
+  font-family: var(--type-second);
+  line-height: 1;
+  font-size: 4rem;
+  margin: 1.6rem 0rem;
+  position: relative;
+  z-index: 1;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--yellow);
+  position: absolute;
+  bottom: 5px;
+  border-radius: 0.4rem;
+  z-index: -1;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 16rem);
+}
+
+.appBody {
+  flex: 1;
+}
